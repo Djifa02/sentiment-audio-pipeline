@@ -42,6 +42,8 @@ sentiment-audio-pipeline/
 ├── pipeline.py
 ├── app.py
 ├── api.py
+├── evaluate.py
+├── Dockerfile
 ├── requirements.txt
 ├── .gitignore
 └── README.md
