@@ -1,0 +1,11 @@
+torch>=2.0
+transformers
+gradio
+fastapi
+uvicorn
+librosa
+soundfile
+sentencepiece
+protobuf
+tiktoken
+
