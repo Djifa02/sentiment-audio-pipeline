@@ -1,9 +1,3 @@
----
-title: sentiment-audio-pipeline
-app_file: app.py
-sdk: gradio
-sdk_version: 6.20.0
----
 # Détection Automatique de Sentiment dans les Appels Vocaux
 
 ## Auteure
@@ -104,6 +98,25 @@ curl -X 'POST' \
 }
 ```
 
+## Docker
+
+### Construction de l image
+
+```bash
+docker build -t sentiment-audio-pipeline .
+```
+
+### Lancement du conteneur
+
+```bash
+docker run -p 8000:8000 sentiment-audio-pipeline
+```
+
+### Acces a l API
+
+http://localhost:8000/docs
+
+
 ## Démonstration sur les fichiers de test
 
 | Fichier | Transcription | Sentiment | Score |
@@ -138,7 +151,6 @@ Details par fichier :
 | positif.mp3 | 11.1% | positif | positif |
 | negatif.mp3 | 21.1% | negatif | negatif |
 | neutre.mp3 | 9.5% | neutre | neutre |
-
 
 ## Limites connues
 
