@@ -1,3 +1,9 @@
+---
+title: sentiment-audio-pipeline
+app_file: app.py
+sdk: gradio
+sdk_version: 6.20.0
+---
 # Détection Automatique de Sentiment dans les Appels Vocaux
 
 ## Auteure
@@ -115,6 +121,23 @@ curl -X 'POST' \
 ### API FastAPI
 
 ![fastapi_docs](fastapi_docs.png)
+
+
+## Evaluation quantitative
+
+| Metrique | Valeur |
+|----------|--------|
+| WER moyen (ASR) | 13.9% |
+| Accuracy sentiment | 100% |
+| F1 Score sentiment | 1.0000 |
+
+Details par fichier :
+
+| Fichier | WER | Sentiment reel | Sentiment predit |
+|---------|-----|----------------|------------------|
+| positif.mp3 | 11.1% | positif | positif |
+| negatif.mp3 | 21.1% | negatif | negatif |
+| neutre.mp3 | 9.5% | neutre | neutre |
 
 
 ## Limites connues
