@@ -110,11 +110,11 @@ curl -X 'POST' \
 
 ### Interface Gradio
 
-![alt text](<Screenshot 2026-07-30 225737.png>)
+![gradio_demo](gradio_demo.png)
 
 ### API FastAPI
 
-![alt text](<Screenshot 2026-07-31 014543.png>)
+![fastapi_docs](fastapi_docs.png)
 
 
 ## Limites connues
